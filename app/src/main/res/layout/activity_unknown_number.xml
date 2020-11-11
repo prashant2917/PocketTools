@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UnknownNumberActivity">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimens_16"
+                android:layout_marginLeft="@dimen/dimens_16"
+                android:layout_marginTop="@dimen/dimens_16"
+                android:layout_marginEnd="@dimen/dimens_16"
+                android:layout_marginRight="@dimen/dimens_16"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/mobile_number_with_cc"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/textSize_12" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimens_16"
+                android:layout_marginLeft="@dimen/dimens_4"
+                android:layout_marginTop="@dimen/dimens_8"
+                android:layout_marginEnd="@dimen/dimens_24"
+                android:layout_marginRight="@dimen/dimens_24"
+                android:focusable="true"
+                android:inputType="phone"
+                android:maxLength="13"
+                android:textColor="@color/color_black"
+                android:background="@drawable/edittext_border"
+                android:textSize="@dimen/textSize_12"
+                android:padding="@dimen/dimens_8" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_message"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_150"
+                android:gravity="left|start"
+                android:layout_marginStart="@dimen/dimens_16"
+                android:layout_marginLeft="@dimen/dimens_4"
+                android:layout_marginTop="@dimen/dimens_8"
+                android:layout_marginEnd="@dimen/dimens_24"
+                android:layout_marginRight="@dimen/dimens_24"
+                android:inputType="textMultiLine"
+                android:hint="@string/type_message_to_send"
+                android:maxLength="200"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/textSize_13"
+                android:background="@drawable/edittext_border"
+                android:padding="@dimen/dimens_8" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimens_16"
+                android:layout_marginTop="@dimen/dimens_16"
+                android:layout_marginEnd="@dimen/dimens_16"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/montserrat_medium"
+                android:minHeight="@dimen/dimens_48"
+                android:text="@string/send"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

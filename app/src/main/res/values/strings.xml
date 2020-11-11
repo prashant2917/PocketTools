@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Pocket Tools</string>
+    <string name="unknown_whatsapp_number">Unknown Whatsapp Number</string>
+    <string name="qr_and_barcode_scanner">QR and Barcode Scanner</string>
+    <string name="whatsapp_cleanup">Whatsapp Cleanup</string>
+    <string name="random_text_generator">Random Text Generator</string>
+    <string name="torch">Flashlight</string>
+    <string name="compass">Compass</string>
+
+    <string name="country_code">Country Code</string>
+    <string name="mobile_number_with_cc">Please Enter Mobile Number With Country Code :</string>
+    <string name="unknown_number_message_description">Send a message to any  Whatsapp Number Without Saving User Number. Enter number with country code and press send button,you will be redirected to whatsapp App for sending message. </string>
+    <string name="send">Send</string>
+    <string name="type_message_to_send">Type Your Message Here</string>
+
 </resources>
