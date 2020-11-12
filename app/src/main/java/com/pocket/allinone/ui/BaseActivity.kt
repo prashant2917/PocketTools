@@ -46,24 +46,7 @@ abstract class BaseActivity : AppCompatActivity() {
     }
 
 
-    fun showToast(message: String) {
-        Toast.makeText(this, message, Toast.LENGTH_LONG).show()
-    }
 
-    fun hasPermission(permission: String): Boolean {
-        return ContextCompat.checkSelfPermission(
-            this,
-            permission
-        ) == PackageManager.PERMISSION_GRANTED
-    }
-
-    fun requestPermission(permissionArray: Array<String>, permissionCode: Int) {
-        ActivityCompat
-            .requestPermissions(
-                this,
-                permissionArray, permissionCode
-            )
-    }
 
 
 }

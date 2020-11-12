@@ -21,5 +21,8 @@
     <string name="scan_result_is">Scan Result is %s</string>
     <string name="OK">OK</string>
     <string name="cancel">Cancel</string>
+    <string name="torch_on">Torch ON</string>
+    <string name="torch_off">Torch OFF</string>
+    <string name="torch_error">Your Phone doesn\'t support flash Light. Bye!</string>
 
 </resources>

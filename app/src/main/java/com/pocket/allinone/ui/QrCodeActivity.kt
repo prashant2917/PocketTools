@@ -11,8 +11,7 @@ import androidx.annotation.RequiresApi
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.Result
 import com.pocket.allinone.R
-import com.pocket.allinone.extensions.navigateToUrl
-import com.pocket.allinone.extensions.showAlertDialogWithTwoButtons
+import com.pocket.allinone.extensions.*
 import com.pocket.allinone.listeners.DialogClickListener
 import kotlinx.android.synthetic.main.activity_qr_code.*
 import me.dm7.barcodescanner.zxing.ZXingScannerView
@@ -163,8 +162,7 @@ class QrCodeActivity : BaseActivity(), ZXingScannerView.ResultHandler {
     override fun onPause() {
         super.onPause()
         mScannerView.stopCamera()
-        //closeMessageDialog()
-        //closeFormatsDialog()
+
     }
 
     private val dialogClickListener = object : DialogClickListener {
