@@ -1,11 +1,12 @@
 package com.pocket.allinone.ui
 
-import android.content.Intent
-import android.net.Uri
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import com.pocket.allinone.R
 import kotlinx.android.synthetic.main.activity_base.*
 import kotlinx.android.synthetic.main.layout_toolbar.*
@@ -44,18 +45,25 @@ abstract class BaseActivity : AppCompatActivity() {
 
     }
 
-    open fun openWhatsApp(number: String, message: String) {
-        try {
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse("http://api.whatsapp.com/send?phone=$number&text=$message")
-            intent.setPackage("com.whatsapp")
-            startActivity(intent)
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
+
+    fun showToast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show()
     }
 
-    fun showToast(message: String){
-        Toast.makeText(this,message,Toast.LENGTH_LONG).show()
+    fun hasPermission(permission: String): Boolean {
+        return ContextCompat.checkSelfPermission(
+            this,
+            permission
+        ) == PackageManager.PERMISSION_GRANTED
     }
+
+    fun requestPermission(permissionArray: Array<String>, permissionCode: Int) {
+        ActivityCompat
+            .requestPermissions(
+                this,
+                permissionArray, permissionCode
+            )
+    }
+
+
 }

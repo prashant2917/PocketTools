@@ -13,5 +13,13 @@
     <string name="send">Send</string>
     <string name="type_message_to_send">Type Your Message Here</string>
     <string name="enter_number_and_message">Please Enter Proper Number and Message.</string>
+    <string name="permission_denied_message">"Permission denied, to proceed further go to app setting and enable the permission "</string>
+    <string name="flash_on_off">Flash On/Off</string>
+    <string name="autoFocus_on_off">Auto Focus On/Off</string>
+    <string name="open_with">Open With</string>
+    <string name="qr_code_dialog_title">Result</string>
+    <string name="scan_result_is">Scan Result is %s</string>
+    <string name="OK">OK</string>
+    <string name="cancel">Cancel</string>
 
 </resources>
