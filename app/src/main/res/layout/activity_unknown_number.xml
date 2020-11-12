@@ -30,7 +30,7 @@
                 android:layout_marginRight="@dimen/dimens_16"
                 android:fontFamily="@font/montserrat_medium"
                 android:text="@string/mobile_number_with_cc"
-                android:textColor="@color/color_black"
+                android:textColor="@color/colorBlack"
                 android:textSize="@dimen/textSize_12" />
 
 
@@ -46,7 +46,7 @@
                 android:focusable="true"
                 android:inputType="phone"
                 android:maxLength="13"
-                android:textColor="@color/color_black"
+                android:textColor="@color/colorBlack"
                 android:background="@drawable/edittext_border"
                 android:textSize="@dimen/textSize_12"
                 android:padding="@dimen/dimens_8" />
@@ -65,7 +65,7 @@
                 android:inputType="textMultiLine"
                 android:hint="@string/type_message_to_send"
                 android:maxLength="200"
-                android:textColor="@color/color_black"
+                android:textColor="@color/colorBlack"
                 android:textSize="@dimen/textSize_13"
                 android:background="@drawable/edittext_border"
                 android:padding="@dimen/dimens_8" />
@@ -77,10 +77,11 @@
                 android:layout_marginStart="@dimen/dimens_16"
                 android:layout_marginTop="@dimen/dimens_16"
                 android:layout_marginEnd="@dimen/dimens_16"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/ripple_btn_bg"
                 android:fontFamily="@font/montserrat_medium"
                 android:minHeight="@dimen/dimens_48"
                 android:text="@string/send"
+                android:clickable="true"
                 android:textColor="@android:color/white" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

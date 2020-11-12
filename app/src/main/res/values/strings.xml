@@ -12,5 +12,6 @@
     <string name="unknown_number_message_description">Send a message to any  Whatsapp Number Without Saving User Number. Enter number with country code and press send button,you will be redirected to whatsapp App for sending message. </string>
     <string name="send">Send</string>
     <string name="type_message_to_send">Type Your Message Here</string>
+    <string name="enter_number_and_message">Please Enter Proper Number and Message.</string>
 
 </resources>

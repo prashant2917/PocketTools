@@ -1,8 +1,6 @@
 package com.pocket.allinone.ui
 
-import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import com.pocket.allinone.R
@@ -10,10 +8,15 @@ import com.pocket.allinone.adapter.ToolsAdapter
 import com.pocket.allinone.models.Tool
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
+    override fun getLayoutResource(): Int {
+        return R.layout.activity_main
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        title=resources.getString(R.string.app_name)
+        setHomeButtonEnabled(false)
         initRecyclerView()
     }
 

@@ -10,7 +10,8 @@ class QrCodeActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setTitle(resources.getString(R.string.qr_and_barcode_scanner))
+        title = resources.getString(R.string.qr_and_barcode_scanner)
+        setHomeButtonEnabled(true)
 
     }
 

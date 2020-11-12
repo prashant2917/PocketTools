@@ -30,7 +30,7 @@
             android:gravity="center"
             android:layout_marginTop="@dimen/dimens_4"
             android:textSize="@dimen/textSize_13"
-            android:textColor="@color/color_black"
+            android:textColor="@color/colorBlack"
             android:fontFamily="@font/montserrat_medium"
             android:text="@string/unknown_whatsapp_number" />
     </LinearLayout>
