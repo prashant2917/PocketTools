@@ -74,7 +74,7 @@ class MainActivity : BaseActivity() {
                     intent = Intent(this@MainActivity, UnknownNumberActivity::class.java)
                 }
                 resources.getString(R.string.compass) -> {
-                    intent = Intent(this@MainActivity, UnknownNumberActivity::class.java)
+                    intent = Intent(this@MainActivity, CompassActivity::class.java)
                 }
                 else -> {
                     print("Unknown Name")

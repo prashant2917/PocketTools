@@ -24,5 +24,6 @@
     <string name="torch_on">Torch ON</string>
     <string name="torch_off">Torch OFF</string>
     <string name="torch_error">Your Phone doesn\'t support flash Light. Bye!</string>
+    <string name="compass_heading_initial_text">Heading : 0.0</string>
 
 </resources>
