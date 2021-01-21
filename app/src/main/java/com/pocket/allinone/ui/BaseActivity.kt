@@ -1,19 +1,18 @@
 package com.pocket.allinone.ui
 
-import android.content.pm.PackageManager
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import com.pocket.allinone.R
+import com.pocket.allinone.databinding.ActivityBaseBinding
+import com.pocket.allinone.databinding.ActivityQrCodeBinding
 import kotlinx.android.synthetic.main.activity_base.*
 import kotlinx.android.synthetic.main.layout_toolbar.*
 
 
 abstract class BaseActivity : AppCompatActivity() {
     abstract fun getLayoutResource(): Int
+    private lateinit var binding: ActivityBaseBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_base)

@@ -17,7 +17,7 @@ class UnknownNumberActivity : BaseActivity() {
         setHomeButtonEnabled(true)
         btn_submit.setOnClickListener {
             if (et_number.text!!.isNotEmpty() && et_message.text!!.isNotEmpty()) {
-                openWhatsApp(et_number.text.toString(), et_message.text.toString())
+                openWhatsApp(et_number.text.toString().trim(), et_message.text.toString())
             } else {
                 showToast(resources.getString(R.string.enter_number_and_message))
             }

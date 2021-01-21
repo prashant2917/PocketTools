@@ -45,7 +45,6 @@
                 android:layout_marginRight="@dimen/dimens_24"
                 android:focusable="true"
                 android:inputType="phone"
-                android:maxLength="13"
                 android:textColor="@color/colorBlack"
                 android:background="@drawable/edittext_border"
                 android:textSize="@dimen/textSize_12"

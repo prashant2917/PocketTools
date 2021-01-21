@@ -11,6 +11,7 @@ import androidx.annotation.RequiresApi
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.Result
 import com.pocket.allinone.R
+import com.pocket.allinone.databinding.ActivityQrCodeBinding
 import com.pocket.allinone.extensions.*
 import com.pocket.allinone.listeners.DialogClickListener
 import kotlinx.android.synthetic.main.activity_qr_code.*
@@ -23,6 +24,7 @@ class QrCodeActivity : BaseActivity(), ZXingScannerView.ResultHandler {
     private var mAutoFocus = false
     private var mSelectedIndices: ArrayList<Int>? = null
     private var mCameraId = -1
+    private lateinit var binding: ActivityQrCodeBinding
 
     companion object {
         private const val CAMERA_PERMISSION_REQUEST_CODE = 101
